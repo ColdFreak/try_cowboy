@@ -12,7 +12,7 @@ start(_Type, _Args) ->
               ]
         }
     ]),
-    {ok, _} = cowboy:start_http(http, 100, [{port, 8080}], [
+    {ok, _} = cowboy:start_http(http, 100, [{port, 3333}], [
         {env, [{dispatch, Dispatch}]}
     ]),
     cowboy_post_sup:start_link().

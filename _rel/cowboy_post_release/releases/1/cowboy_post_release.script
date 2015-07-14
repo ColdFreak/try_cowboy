@@ -1,4 +1,4 @@
-%% script generated at {2015,7,14} {16,9,18}
+%% script generated at {2015,7,14} {17,4,49}
 {script,
     {"cowboy_post_release","1"},
     [{preLoaded,
@@ -201,7 +201,7 @@
              [{application,cowboy_post,
                   [{description,[]},
                    {vsn,"0.1.0"},
-                   {id,[]},
+                   {id,"dbcea96-dirty"},
                    {modules,[cowboy_post_app,cowboy_post_sup,echo_handler]},
                    {registered,[]},
                    {applications,[kernel,stdlib,cowboy]},
