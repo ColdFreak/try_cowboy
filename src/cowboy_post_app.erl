@@ -8,6 +8,8 @@ start(_Type, _Args) ->
     Dispatch =  cowboy_router:compile([
         {'_', [
                 {"/", cowboy_static, {priv_file, cowboy_post, "static/index.html" }},
+                {"/app", cowboy_static, {priv_file, cowboy_post, "static/angular.html" }},
+                {"/js/[...]", cowboy_static, {priv_dir, cowboy_post, "static/js"}},
                 {"/echo", echo_handler, []}
               ]
         }
