@@ -1,7 +1,7 @@
 {application, cowboy_post, [
 	{description, ""},
 	{vsn, "0.1.0"},
-	{id, "v1-2-g968f52d-dirty"},
+	{id, "v3-2-g6f737e3-dirty"},
 	{modules, ['cowboy_post_app','cowboy_post_sup','echo_handler','rpn_handler']},
 	{registered, []},
 	{applications, [

@@ -3,13 +3,19 @@
    <head>
    <script src="/js/jquery-2.1.4.js"></script>
    <script src="/js/angular.js"></script>
+   <link rel="stylesheet" href="/css/bootstrap.css">
+   <script src="/js/bootstrap.js"></script>
    <script src="/controllers/rpnController.js"></script>
    </head>
    <body>
         <div ng-controller="rpnCtrl">
-            <form>
-                <input name="formula" ng-model="formula" placeholder="逆ポーランド式" style="width:180px"></input>
-                <input type="button" ng-click="calcrpn()" value="Submit"></input>
+            <form role="form">
+                <div class="form-group">
+                    <input name="formula" class="form-control" ng-model="formula" placeholder="逆ポーランド式"></input>
+                </div>
+                <div class="form-group">
+                    <input type="button" ng-click="calcrpn()" value="Submit"></input>
+                </div>
             </form>
             <p>結果は <span ng-bind="rpnResult"></span> </p>
         </div>

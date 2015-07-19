@@ -9,6 +9,7 @@ start(_Type, _Args) ->
         {'_', [
                 {"/js/[...]", cowboy_static, {priv_dir, cowboy_post, "static/js"}},
                 {"/controllers/[...]", cowboy_static, {priv_dir, cowboy_post, "static/controllers"}},
+                {"/css/[...]", cowboy_static, {priv_dir, cowboy_post, "static/css"}},
 
                 {"/", cowboy_static, {priv_file, cowboy_post, "static/index.html" }},
                 {"/process_echo", echo_handler, []},
